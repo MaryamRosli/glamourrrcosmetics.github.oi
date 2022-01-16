@@ -1,0 +1,149 @@
+*
+{
+      padding: 0;
+      margin: 0;
+}
+body
+{
+      background-image: url(background.jpg);
+      background-size: cover; 
+      background-position: center; 
+      box-sizing: border-box;
+      font-family: sans-serif;
+}
+.menu-bar
+{
+      background-color:#E4B660;
+      text-align: center;
+}
+.menu-bar ul 
+{
+      display: inline-flex;
+      list-style: none;
+      color: #fff;
+}
+.menu-bar ul li 
+{
+      width: 120px;
+      margin: 15px;
+      padding: 15px; 
+}
+.menu-bar ul li a 
+{
+      text-decoration: none;
+      color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+      background: #69491A;
+      border-radius: 3px; 
+}
+
+.sub-menu-1
+{
+     display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+     display: block;
+     position: absolute;
+     background: #F2AB39;
+     margin-top: 15px;
+     margin-left: -15px; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+     display: block;
+     margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #69491A;
+}
+
+
+
+
+#span{
+color: #fff;
+position:absolute;
+top:70%;
+left:51%;
+transform: translate(-50%,-50%);
+font-size:20px;
+}
+.icon{
+position: relative;
+width:100%
+height:20%;
+}
+
+}
+.icon span{
+width:50px;
+height:50px;
+top:5%;
+left:51%;
+transform: translate(-50%,-50%);
+color: #fff;
+}
+
+.icon i{
+width:80%
+height:10%;
+font-size:120px;
+margin:50px 0 0 0 ;
+color:orangered;
+}
+
+
+.icon span 1{
+font-size:30px;
+color: #333;
+}
+
+button{
+width:180px;
+height:50px;
+padding:0;
+margin:0 20px;
+border:none;
+outline:none;
+background:#333;
+boeder-radius:5px;
+cursor:pointer;
+color:fff;
+font-size:20px;
+}
+.add_to_cart{
+margin:40px;
+
+}
+
+.sale .box-container .box{
+text- align: center;
+background: 0.2rem solid #222;
+box-shadow:0 0.5rem 1 rem rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+

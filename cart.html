@@ -1,0 +1,311 @@
+<html>
+<head>
+<title>Checkout | Glamourrr Cosmetic</title>
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body> 
+<div class="menu-bar">
+<ul>
+<li class="active"<li> <a href="index.html">Home</a></li>
+<li><a href="#">User Account</a>
+   <div class="sub-menu-1">
+       <ul>
+           <li><a href="wishlist.html">Wishlist</a></li>
+           <li><a href="cart.html">Cart</a></li>
+       </ul>
+   </div>
+</li>
+<li><a href="#">Sale</a>
+<div class="sub-menu-1">
+       <ul>
+           <li><a href="holiday.html">Holiday</a></li>
+       </ul>
+   </div>
+</li>
+<li><a href="#">Products (Store)</a>
+<div class="sub-menu-1">
+       <ul>
+           <li><a href="lipstick.html">Lipstick</a></li>
+           <li><a href="mascara.html">Mascara</a></li>
+           <li><a href="eyeshadow.html">Eyeshadow</a></li>
+           <li><a href="foundation.html">Foundation</a></li>
+       </ul>
+   </div>
+</li>
+
+<li><a href="aboutus.html">About Us</a></li>
+</ul>
+</div>
+<br>
+<br>
+<h1 align="center"><font color="#69491a" font size="50" font face="verdana">Checkout Form</font></h1>
+<br>
+
+ 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -13px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 1px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 5px 0;
+  border: none;
+  width: 20%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 400px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+         <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+<br>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ali Abu Ahmad">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="ali@example.com">
+            <label for="adr"><i class="fa fa-address-card"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fas fa-city"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Malaysia">
+
+
+<br>
+<br>
+ 
+
+            <div class="row">
+              <div class="col-50">
+                 <label for="state"><i class="fas fa-flag-usa"></i> State</label>
+                <input type="text" id="state" name="state" placeholder="MY">
+              </div>
+
+<br>
+<br>
+<br>
+
+     <hr>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+
+<br>
+<br>
+
+            <h3>Payment</h3>
+<br>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+<script data-search-pseudo-elements src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+<ul>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-discover"></i>
+            </div>
+<br>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="A.Ahmad Abu">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="December">
+<br>
+<br>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2025">
+              </div>
+<br>
+
+              <div class="col-50">
+                    <label for="cvv">CVV</label>
+                     <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+<br>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+
+        <center><input type="submit" value="Continue to checkout" class="btn"></center>
+      </form>
+    </div>
+  </div>
+
+ <div class="col-50">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="lipstick.html">Lipstick</a> <span class="price">RM24.90</span></p>
+      <p><a href="foundation.html">Foundation</a><span class="price">RM35.90</span></p>
+      <p><a href="mascara.html">Mascara</a><span class="price">RM26.90</span></p>
+      <p><a href="eyeshadow.html">Eyeshadow</a> <span class="price">RM27.90</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>RM115.60</b></span></p>
+    </div>
+
+    <hr>
+<br>
+
+
+<table width="103%" align="center" valign="middle" cellpadding="10" bgcolor="#e4b660">
+<tr align=left">
+<th align=left valign=top>HOTLINE CUSTOMER SERVICE</th>
+<th align=left valign=top>CUSTOMER SERVICE</th>
+<th>CONNECT</th>
+<th>WE ACCEPT</td></th>
+
+<tr align="left">
+<td>+03-8977 2843</td>
+<td><a href="aboutus.html"><font color="#D35400">About Us</font></a></td>
+<td align="center"><img src="twitter.jpeg"></td>
+<td align="center"><img src="maybank.jpeg"></td></tr>
+
+<tr align="left">
+<td><a href="index.html"><font color="#D35400">info.glamourrrcosmetic.com.my</font></a></td>
+<td><a href="shipping.html"><font color="#D35400">Shipping Information</font></a></td>
+<td align="center"><img src="facebook.jpeg"></td>
+<td align="center"><img src="cimb.jpeg"></td></tr>
+
+<tr align="center">
+<td></td>
+<td align="left"><a href="cart.html"><font color="#D35400">Shopping Guide</font></a></td>
+<td><img src="instagram.jpeg"></td>
+<td><img src="bankislam.jpeg"></td></tr>
+
+<tr align="left">
+<td></td>
+<td><a href="aboutus.html"><font color="#D35400">Return and Refund Policy</font></a></td>
+<td></td>
+<td align="center"><img src="bsn.jpeg"></td></tr>
+
+<tr align="left">
+<td></td>
+<td><a href="trackorder.html"><font color="#D35400">Track Your Order</font></a></td>
+<td></td>
+<td></td></tr>
+</table>
+
+<table width="100%" align="center" valign="middle" cellpadding="10" bgcolor="#e4b660">
+<tr align="left"><td>.</td>
+<tr align="right"><td>.</td>
+</tr></table>
+
+<table width="100%" align="center" valign="middle" cellpadding="10" bgcolor="#e4b660">
+<tr align="center">
+<td>© Copyright 2022 - Glamourrr Cosmetic</td></tr>
+</table>
+
+</body>
+</html>
